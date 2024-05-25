@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b38eefee0057031d2891b6971716e9e9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b38eefee0057031d2891b6971716e9e9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b38eefee0057031d2891b6971716e9e9 = L.map(
+                "map_b38eefee0057031d2891b6971716e9e9",
+                {
+                    center: [39.88460997771748, -63.985180619185556],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a154043cb3ffaa83e30563c4b328b386 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a154043cb3ffaa83e30563c4b328b386.addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var marker_97bb5acb58bb349de008e85e170a78f0 = L.marker(
+                [48.042601819765935, 18.072644991157347],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_8c851103fdd3e0824c4420bdc7d96f1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_97bb5acb58bb349de008e85e170a78f0.setIcon(icon_8c851103fdd3e0824c4420bdc7d96f1b);
+        
+    
+        var popup_7ae5f76c4518ffe455e36dcaeb36b9a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a56569d151e454e72c70286ef3531b60 = $(`<div id="html_a56569d151e454e72c70286ef3531b60" style="width: 100.0%; height: 100.0%;">3Degrees<br>Bioenergy,Biofuels,Biomass,Buildings,Carbon,Geothermal energy,Hydropower,PRIMRE,Renewable Energy,Services,Solar,Wind energy<br>http://www.3degreesinc.com/</div>`)[0];
+                popup_7ae5f76c4518ffe455e36dcaeb36b9a1.setContent(html_a56569d151e454e72c70286ef3531b60);
+            
+        
+
+        marker_97bb5acb58bb349de008e85e170a78f0.bindPopup(popup_7ae5f76c4518ffe455e36dcaeb36b9a1)
+        ;
+
+        
+    
+    
+            var marker_ecc76a052079ae70d4f60111605ec850 = L.marker(
+                [37.0444351, -119.4728231],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_7e3521ef213413399e15f700129200da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ecc76a052079ae70d4f60111605ec850.setIcon(icon_7e3521ef213413399e15f700129200da);
+        
+    
+        var popup_6262ea797c6459520028090c77847572 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e847d148c2660d366d14c856fd505e95 = $(`<div id="html_e847d148c2660d366d14c856fd505e95" style="width: 100.0%; height: 100.0%;">4th Day Energy<br>Solar<br>http://www.4thdayenergy.com</div>`)[0];
+                popup_6262ea797c6459520028090c77847572.setContent(html_e847d148c2660d366d14c856fd505e95);
+            
+        
+
+        marker_ecc76a052079ae70d4f60111605ec850.bindPopup(popup_6262ea797c6459520028090c77847572)
+        ;
+
+        
+    
+    
+            var marker_80335e72035a0649c6137b6dee571593 = L.marker(
+                [37.8713702960199, -122.29376355920398],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_460ba57de3617db9b8ed16155c5e26f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_80335e72035a0649c6137b6dee571593.setIcon(icon_460ba57de3617db9b8ed16155c5e26f2);
+        
+    
+        var popup_c448f2c1b385c2cbab870db277012e6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e15f59748ac0325958557c71995e484 = $(`<div id="html_8e15f59748ac0325958557c71995e484" style="width: 100.0%; height: 100.0%;">A1 Sun, Inc.<br>Solar<br>http://www.a1suninc.com</div>`)[0];
+                popup_c448f2c1b385c2cbab870db277012e6f.setContent(html_8e15f59748ac0325958557c71995e484);
+            
+        
+
+        marker_80335e72035a0649c6137b6dee571593.bindPopup(popup_c448f2c1b385c2cbab870db277012e6f)
+        ;
+
+        
+    
+    
+            var marker_632d506618a34c34921800eac7ef18e0 = L.marker(
+                [49.6214909, 24.4386838],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_c00c89d8077c4fc5edbe737f6ad35b8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_632d506618a34c34921800eac7ef18e0.setIcon(icon_c00c89d8077c4fc5edbe737f6ad35b8c);
+        
+    
+        var popup_ad130e091a5f1a3af538a96d9cf87dc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77f230e16718ffad869e69c5b1ffd995 = $(`<div id="html_77f230e16718ffad869e69c5b1ffd995" style="width: 100.0%; height: 100.0%;">AC Solar Inc<br>Solar<br>http://www.acsolar.com/</div>`)[0];
+                popup_ad130e091a5f1a3af538a96d9cf87dc8.setContent(html_77f230e16718ffad869e69c5b1ffd995);
+            
+        
+
+        marker_632d506618a34c34921800eac7ef18e0.bindPopup(popup_ad130e091a5f1a3af538a96d9cf87dc8)
+        ;
+
+        
+    
+    
+            var marker_e29e74369a54d9c657a485db0b5ad169 = L.marker(
+                [49.06832275, 2.302462398856261],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_baa29017455ca24347f49262e6ae2f83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e29e74369a54d9c657a485db0b5ad169.setIcon(icon_baa29017455ca24347f49262e6ae2f83);
+        
+    
+        var popup_0d0fda40a0319a176534d97e30d3a629 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d513c4a77d2788af76eca6563dcfe5f0 = $(`<div id="html_d513c4a77d2788af76eca6563dcfe5f0" style="width: 100.0%; height: 100.0%;">AEE Solar<br>Solar<br>http://www.aeesolar.com/</div>`)[0];
+                popup_0d0fda40a0319a176534d97e30d3a629.setContent(html_d513c4a77d2788af76eca6563dcfe5f0);
+            
+        
+
+        marker_e29e74369a54d9c657a485db0b5ad169.bindPopup(popup_0d0fda40a0319a176534d97e30d3a629)
+        ;
+
+        
+    
+    
+            var marker_f7ec04d25350973d8a16b1b518d30392 = L.marker(
+                [40.44824454586207, -105.12171657439654],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_427183f5fbd1a2862330b990d4bb7d9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f7ec04d25350973d8a16b1b518d30392.setIcon(icon_427183f5fbd1a2862330b990d4bb7d9f);
+        
+    
+        var popup_ab7019b36da901d4b8c1f6da55ce5156 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4ffc6635df83f085db037150923ba05 = $(`<div id="html_d4ffc6635df83f085db037150923ba05" style="width: 100.0%; height: 100.0%;">Abound Solar<br>Solar<br>http://www.abound.com</div>`)[0];
+                popup_ab7019b36da901d4b8c1f6da55ce5156.setContent(html_d4ffc6635df83f085db037150923ba05);
+            
+        
+
+        marker_f7ec04d25350973d8a16b1b518d30392.bindPopup(popup_ab7019b36da901d4b8c1f6da55ce5156)
+        ;
+
+        
+    
+    
+            var marker_a80002d066c16211f559ce445f441714 = L.marker(
+                [40.54408221188525, -105.06427430860656],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_765ceb88fad0d16fc7b25a13f3354b14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a80002d066c16211f559ce445f441714.setIcon(icon_765ceb88fad0d16fc7b25a13f3354b14);
+        
+    
+        var popup_241dfc3f5bd3c641883fbfb4b81a3b06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b3cb3f86e74bdd6214463b7f7b1dd12 = $(`<div id="html_8b3cb3f86e74bdd6214463b7f7b1dd12" style="width: 100.0%; height: 100.0%;">Advanced Energy<br>Solar<br>http://www.advanced-energy.com/</div>`)[0];
+                popup_241dfc3f5bd3c641883fbfb4b81a3b06.setContent(html_8b3cb3f86e74bdd6214463b7f7b1dd12);
+            
+        
+
+        marker_a80002d066c16211f559ce445f441714.bindPopup(popup_241dfc3f5bd3c641883fbfb4b81a3b06)
+        ;
+
+        
+    
+    
+            var marker_f7b14713e5e87656419f9dc846b0b959 = L.marker(
+                [42.391154942693746, -71.55702443113785],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_8461b1f7713937ff3ed6d480a80e6500 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f7b14713e5e87656419f9dc846b0b959.setIcon(icon_8461b1f7713937ff3ed6d480a80e6500);
+        
+    
+        var popup_fcc20ed809478aeae3dca8fe4144eb57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a358f1ff0443cb50276fef4e6f3cbafc = $(`<div id="html_a358f1ff0443cb50276fef4e6f3cbafc" style="width: 100.0%; height: 100.0%;">AltE<br>Solar<br>http://store.altestore.com/</div>`)[0];
+                popup_fcc20ed809478aeae3dca8fe4144eb57.setContent(html_a358f1ff0443cb50276fef4e6f3cbafc);
+            
+        
+
+        marker_f7b14713e5e87656419f9dc846b0b959.bindPopup(popup_fcc20ed809478aeae3dca8fe4144eb57)
+        ;
+
+        
+    
+    
+            var marker_b58f03636c27b0b41c73c2178907112e = L.marker(
+                [41.20416418545485, -73.43687696218262],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_b24dcb552085022012f81502fa05a368 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b58f03636c27b0b41c73c2178907112e.setIcon(icon_b24dcb552085022012f81502fa05a368);
+        
+    
+        var popup_7c73f442f66d08363fbdcf72be425566 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_242ba61435aec74866afddec0531cb36 = $(`<div id="html_242ba61435aec74866afddec0531cb36" style="width: 100.0%; height: 100.0%;">Alteris Renewables<br>Solar<br>http://www.alterisinc.com/index.php</div>`)[0];
+                popup_7c73f442f66d08363fbdcf72be425566.setContent(html_242ba61435aec74866afddec0531cb36);
+            
+        
+
+        marker_b58f03636c27b0b41c73c2178907112e.bindPopup(popup_7c73f442f66d08363fbdcf72be425566)
+        ;
+
+        
+    
+    
+            var marker_bc258441df5ec907fc8e2c1b0f0256d0 = L.marker(
+                [49.66847662, 23.38750006],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_2471235d7ae0ce5dfd0137ed90e35b43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bc258441df5ec907fc8e2c1b0f0256d0.setIcon(icon_2471235d7ae0ce5dfd0137ed90e35b43);
+        
+    
+        var popup_40cdb3414edde6c35d0434c326522613 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a17d0f4303ccac1d41c6868a5ef01e0 = $(`<div id="html_5a17d0f4303ccac1d41c6868a5ef01e0" style="width: 100.0%; height: 100.0%;">Alternative Power Enterprises<br>Solar<br>http://www.alternative-power.com/</div>`)[0];
+                popup_40cdb3414edde6c35d0434c326522613.setContent(html_5a17d0f4303ccac1d41c6868a5ef01e0);
+            
+        
+
+        marker_bc258441df5ec907fc8e2c1b0f0256d0.bindPopup(popup_40cdb3414edde6c35d0434c326522613)
+        ;
+
+        
+    
+    
+            var marker_653dac12f6d353dfe0a89e252ebb5fa2 = L.marker(
+                [37.43780436721311, 13.630528773770493],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_dde1c6028baac82e004f5688a976383c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_653dac12f6d353dfe0a89e252ebb5fa2.setIcon(icon_dde1c6028baac82e004f5688a976383c);
+        
+    
+        var popup_37236e32154cce801bf21e36cbc9fa6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1c99bf3ee9dc86d6e10a67cdd77f409 = $(`<div id="html_c1c99bf3ee9dc86d6e10a67cdd77f409" style="width: 100.0%; height: 100.0%;">Ambient Control Systems<br>Solar<br>http://www.ambientalert.com/main.html</div>`)[0];
+                popup_37236e32154cce801bf21e36cbc9fa6c.setContent(html_c1c99bf3ee9dc86d6e10a67cdd77f409);
+            
+        
+
+        marker_653dac12f6d353dfe0a89e252ebb5fa2.bindPopup(popup_37236e32154cce801bf21e36cbc9fa6c)
+        ;
+
+        
+    
+    
+            var marker_cca868e5a393006d29ff5d5e1c3674d0 = L.marker(
+                [42.30909428062016, -71.41839724806202],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_8b9df37ce31261c2cb44044c545bfd17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cca868e5a393006d29ff5d5e1c3674d0.setIcon(icon_8b9df37ce31261c2cb44044c545bfd17);
+        
+    
+        var popup_f37482bd8516cb223854cef16379aeb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59f033a0f03b026ba80ea97266374290 = $(`<div id="html_59f033a0f03b026ba80ea97266374290" style="width: 100.0%; height: 100.0%;">Ameresco, Inc.<br>Biomass,Buildings,Efficiency,Geothermal energy,Renewable Energy,Services,Solar,Wind energy<br>http://www.ameresco.com</div>`)[0];
+                popup_f37482bd8516cb223854cef16379aeb7.setContent(html_59f033a0f03b026ba80ea97266374290);
+            
+        
+
+        marker_cca868e5a393006d29ff5d5e1c3674d0.bindPopup(popup_f37482bd8516cb223854cef16379aeb7)
+        ;
+
+        
+    
+    
+            var marker_16ed6ec283b9a1b7ff8b8b10ff7a209c = L.marker(
+                [49.03408148927165, 18.28996054940945],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_6cb2a7dcfc8e5c172b71749612251566 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_16ed6ec283b9a1b7ff8b8b10ff7a209c.setIcon(icon_6cb2a7dcfc8e5c172b71749612251566);
+        
+    
+        var popup_98ad42671acc40291cf0d86166298ddf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f53001bde2482f8319eb745f9dda05d3 = $(`<div id="html_f53001bde2482f8319eb745f9dda05d3" style="width: 100.0%; height: 100.0%;">American Capital Energy<br>Solar<br>http://www.americancapitalenergy.com/</div>`)[0];
+                popup_98ad42671acc40291cf0d86166298ddf.setContent(html_f53001bde2482f8319eb745f9dda05d3);
+            
+        
+
+        marker_16ed6ec283b9a1b7ff8b8b10ff7a209c.bindPopup(popup_98ad42671acc40291cf0d86166298ddf)
+        ;
+
+        
+    
+    
+            var marker_bfc94b6ae184647ae37fd9556abd90b6 = L.marker(
+                [29.756604186666667, -95.36519995566667],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_2f6d22fc2409e760aa762e1efddeeec9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bfc94b6ae184647ae37fd9556abd90b6.setIcon(icon_2f6d22fc2409e760aa762e1efddeeec9);
+        
+    
+        var popup_84cd952c9fe8a726b6e17fd6f8096c3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ccebce80d4b1f81254115f5270bf5b5 = $(`<div id="html_3ccebce80d4b1f81254115f5270bf5b5" style="width: 100.0%; height: 100.0%;">American Photovoltaics<br>Solar<br>http://apv-us.com/</div>`)[0];
+                popup_84cd952c9fe8a726b6e17fd6f8096c3e.setContent(html_3ccebce80d4b1f81254115f5270bf5b5);
+            
+        
+
+        marker_bfc94b6ae184647ae37fd9556abd90b6.bindPopup(popup_84cd952c9fe8a726b6e17fd6f8096c3e)
+        ;
+
+        
+    
+    
+            var marker_1f67f10fde0bb590bb1fb018bdea601c = L.marker(
+                [38.91966783990461, -104.77973408489666],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_4a172edae718e4f6d1316aa8d90a6c85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1f67f10fde0bb590bb1fb018bdea601c.setIcon(icon_4a172edae718e4f6d1316aa8d90a6c85);
+        
+    
+        var popup_62f9b06473af3ef5ae6ac672fe0d64f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d94eeb55230237f62e8099ee15ab522a = $(`<div id="html_d94eeb55230237f62e8099ee15ab522a" style="width: 100.0%; height: 100.0%;">nan</div>`)[0];
+                popup_62f9b06473af3ef5ae6ac672fe0d64f3.setContent(html_d94eeb55230237f62e8099ee15ab522a);
+            
+        
+
+        marker_1f67f10fde0bb590bb1fb018bdea601c.bindPopup(popup_62f9b06473af3ef5ae6ac672fe0d64f3)
+        ;
+
+        
+    
+    
+            var marker_82034d54ec07dec44b190de6a0af93f5 = L.marker(
+                [39.74345101071429, -105.2074898359127],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_97660722e486735ae6acb1d1d1462f62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_82034d54ec07dec44b190de6a0af93f5.setIcon(icon_97660722e486735ae6acb1d1d1462f62);
+        
+    
+        var popup_2336f4addad6f60b3475f07f886f089d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92a36dc1942a63e3bc4af2c4d4144260 = $(`<div id="html_92a36dc1942a63e3bc4af2c4d4144260" style="width: 100.0%; height: 100.0%;">Ampulse Corporation<br>Solar<br>http://www.ampulse.com/</div>`)[0];
+                popup_2336f4addad6f60b3475f07f886f089d.setContent(html_92a36dc1942a63e3bc4af2c4d4144260);
+            
+        
+
+        marker_82034d54ec07dec44b190de6a0af93f5.bindPopup(popup_2336f4addad6f60b3475f07f886f089d)
+        ;
+
+        
+    
+    
+            var marker_2933aed446670028cfb18a49dab61075 = L.marker(
+                [39.92061849647059, -104.96088951411765],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_ffb6e46e32aa263280ac710624d05933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2933aed446670028cfb18a49dab61075.setIcon(icon_ffb6e46e32aa263280ac710624d05933);
+        
+    
+        var popup_40032df0240adc9e029677cbf4e86cd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df0ad2abbc1e23ca619531687a6b580c = $(`<div id="html_df0ad2abbc1e23ca619531687a6b580c" style="width: 100.0%; height: 100.0%;">Ascent Solar<br>Solar<br>http://www.ascentsolar.com/</div>`)[0];
+                popup_40032df0240adc9e029677cbf4e86cd8.setContent(html_df0ad2abbc1e23ca619531687a6b580c);
+            
+        
+
+        marker_2933aed446670028cfb18a49dab61075.bindPopup(popup_40032df0240adc9e029677cbf4e86cd8)
+        ;
+
+        
+    
+    
+            var marker_2df8a6134e4c39d001ce8b100953f8a8 = L.marker(
+                [37.8713702960199, -122.29376355920398],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_972768a62ca2291e56efd1462aa26128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2df8a6134e4c39d001ce8b100953f8a8.setIcon(icon_972768a62ca2291e56efd1462aa26128);
+        
+    
+        var popup_4ce6158f9450d3fb0a615ce3921904fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_553e6d87cdbcf3867b207b8b98ddd557 = $(`<div id="html_553e6d87cdbcf3867b207b8b98ddd557" style="width: 100.0%; height: 100.0%;">Borrego Solar<br>Solar<br>http://www.borregosolar.com/</div>`)[0];
+                popup_4ce6158f9450d3fb0a615ce3921904fd.setContent(html_553e6d87cdbcf3867b207b8b98ddd557);
+            
+        
+
+        marker_2df8a6134e4c39d001ce8b100953f8a8.bindPopup(popup_4ce6158f9450d3fb0a615ce3921904fd)
+        ;
+
+        
+    
+    
+            var marker_0ca60bbf0337922ba06b04a1289db8f1 = L.marker(
+                [39.75857327258065, -104.92072448629033],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_87a6277dfc8d07090b02a446ddb2c837 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0ca60bbf0337922ba06b04a1289db8f1.setIcon(icon_87a6277dfc8d07090b02a446ddb2c837);
+        
+    
+        var popup_385102327b70b7ab7621e016651dc0c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f74cb49bb1976e810657326ecb92382c = $(`<div id="html_f74cb49bb1976e810657326ecb92382c" style="width: 100.0%; height: 100.0%;">BrightPhase Energy<br>Solar<br>http://www.brightphaseenergy.com/</div>`)[0];
+                popup_385102327b70b7ab7621e016651dc0c1.setContent(html_f74cb49bb1976e810657326ecb92382c);
+            
+        
+
+        marker_0ca60bbf0337922ba06b04a1289db8f1.bindPopup(popup_385102327b70b7ab7621e016651dc0c1)
+        ;
+
+        
+    
+    
+            var marker_fce999d881db31b8f051330f9c90a572 = L.marker(
+                [37.80882766337449, -122.26816316008231],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_af3faf349f62e0828817856e5c731858 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fce999d881db31b8f051330f9c90a572.setIcon(icon_af3faf349f62e0828817856e5c731858);
+        
+    
+        var popup_93223e706ab42dffc90d4d76a028d3f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f5a9df104ffe2d257b640b74906de7c = $(`<div id="html_5f5a9df104ffe2d257b640b74906de7c" style="width: 100.0%; height: 100.0%;">BrightSource<br>Solar<br>http://www.brightsourceenergy.com/</div>`)[0];
+                popup_93223e706ab42dffc90d4d76a028d3f1.setContent(html_5f5a9df104ffe2d257b640b74906de7c);
+            
+        
+
+        marker_fce999d881db31b8f051330f9c90a572.bindPopup(popup_93223e706ab42dffc90d4d76a028d3f1)
+        ;
+
+        
+    
+    
+            var marker_74ca12ce403d8c1f3b6c8d41339c5157 = L.marker(
+                [26.2170639, 50.4532615],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_75a9d799fb6f6e72930bea32f548492f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_74ca12ce403d8c1f3b6c8d41339c5157.setIcon(icon_75a9d799fb6f6e72930bea32f548492f);
+        
+    
+        var popup_b0b3b166253d52bbbda1d85a60bbdacd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3071a46edfab0c97c0fd6d5afb386c76 = $(`<div id="html_3071a46edfab0c97c0fd6d5afb386c76" style="width: 100.0%; height: 100.0%;">C-Voltaics<br>Solar<br>http://www.c-voltaics.com</div>`)[0];
+                popup_b0b3b166253d52bbbda1d85a60bbdacd.setContent(html_3071a46edfab0c97c0fd6d5afb386c76);
+            
+        
+
+        marker_74ca12ce403d8c1f3b6c8d41339c5157.bindPopup(popup_b0b3b166253d52bbbda1d85a60bbdacd)
+        ;
+
+        
+    
+    
+            var marker_0dd67f30fb6618d9eb384acb1d53c8a2 = L.marker(
+                [48.29808623333333, 16.419115433333335],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_bdd323cd77f459046ce2ba4e7e6941d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0dd67f30fb6618d9eb384acb1d53c8a2.setIcon(icon_bdd323cd77f459046ce2ba4e7e6941d6);
+        
+    
+        var popup_9b1ac22ddd3faa6b8515c64e47d02ffe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ce7ce0b21c93cad909e6734a2bc3af1 = $(`<div id="html_8ce7ce0b21c93cad909e6734a2bc3af1" style="width: 100.0%; height: 100.0%;">CREATIVE ELECTRO POWER<br>Solar<br>http://www.smmbd.com</div>`)[0];
+                popup_9b1ac22ddd3faa6b8515c64e47d02ffe.setContent(html_8ce7ce0b21c93cad909e6734a2bc3af1);
+            
+        
+
+        marker_0dd67f30fb6618d9eb384acb1d53c8a2.bindPopup(popup_9b1ac22ddd3faa6b8515c64e47d02ffe)
+        ;
+
+        
+    
+    
+            var marker_8354b1ff1a58020ed8e0bd6eaf9db846 = L.marker(
+                [39.469570393756314, -104.88685833054527],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_8dab726e0f5a95ae23a73ae6382ff471 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8354b1ff1a58020ed8e0bd6eaf9db846.setIcon(icon_8dab726e0f5a95ae23a73ae6382ff471);
+        
+    
+        var popup_ad7cf9bd29e00a768e1a14e46869af15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a22e77171405087995a309199d2e4fef = $(`<div id="html_a22e77171405087995a309199d2e4fef" style="width: 100.0%; height: 100.0%;">Capitol Solar Energy LLC<br>Solar<br>http://capitolsolarenergy.com/</div>`)[0];
+                popup_ad7cf9bd29e00a768e1a14e46869af15.setContent(html_a22e77171405087995a309199d2e4fef);
+            
+        
+
+        marker_8354b1ff1a58020ed8e0bd6eaf9db846.bindPopup(popup_ad7cf9bd29e00a768e1a14e46869af15)
+        ;
+
+        
+    
+    
+            var marker_e0f032508b3ca078d1055385686c8439 = L.marker(
+                [30.37814139893365, -97.67731188542655],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_4ed377bc5f8e36c1a855d770709b6a55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e0f032508b3ca078d1055385686c8439.setIcon(icon_4ed377bc5f8e36c1a855d770709b6a55);
+        
+    
+        var popup_57ab2f3e1dd5573a4b71d63ff454d3f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a4458c8cbdc17043b12c76aa571a695 = $(`<div id="html_3a4458c8cbdc17043b12c76aa571a695" style="width: 100.0%; height: 100.0%;">Celestial Power<br>Solar<br>http://celestialpower.biz/</div>`)[0];
+                popup_57ab2f3e1dd5573a4b71d63ff454d3f8.setContent(html_3a4458c8cbdc17043b12c76aa571a695);
+            
+        
+
+        marker_e0f032508b3ca078d1055385686c8439.bindPopup(popup_57ab2f3e1dd5573a4b71d63ff454d3f8)
+        ;
+
+        
+    
+    
+            var marker_6e27c33c6bbe1e473555b32faad79f84 = L.marker(
+                [48.042601819765935, 18.072644991157347],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_40ddfab315b714cc2fefe9ac4eba509e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6e27c33c6bbe1e473555b32faad79f84.setIcon(icon_40ddfab315b714cc2fefe9ac4eba509e);
+        
+    
+        var popup_75196166573c031ff0ade2d3d6ea7408 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fe6f43ff35b6471709f8cdd1a958dd6 = $(`<div id="html_7fe6f43ff35b6471709f8cdd1a958dd6" style="width: 100.0%; height: 100.0%;">Chevron Energy Solutions<br>Solar<br>http://www.chevronenergy.com/</div>`)[0];
+                popup_75196166573c031ff0ade2d3d6ea7408.setContent(html_7fe6f43ff35b6471709f8cdd1a958dd6);
+            
+        
+
+        marker_6e27c33c6bbe1e473555b32faad79f84.bindPopup(popup_75196166573c031ff0ade2d3d6ea7408)
+        ;
+
+        
+    
+    
+            var marker_32131b52c9da62498c656e189271dee1 = L.marker(
+                [40.7701712411311, -73.9596668222108],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_37f3ce4247024f75ab92291fdaa4a758 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_32131b52c9da62498c656e189271dee1.setIcon(icon_37f3ce4247024f75ab92291fdaa4a758);
+        
+    
+        var popup_4c3413ba33c77c4ab0c2110b4847cb9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e450b2cea7668e4efa2d6c946876ed3 = $(`<div id="html_5e450b2cea7668e4efa2d6c946876ed3" style="width: 100.0%; height: 100.0%;">Civitas Energy<br>Solar<br>http://CivitasEnergy.com</div>`)[0];
+                popup_4c3413ba33c77c4ab0c2110b4847cb9a.setContent(html_5e450b2cea7668e4efa2d6c946876ed3);
+            
+        
+
+        marker_32131b52c9da62498c656e189271dee1.bindPopup(popup_4c3413ba33c77c4ab0c2110b4847cb9a)
+        ;
+
+        
+    
+    
+            var marker_9447513110eee08b9fb1985a81418645 = L.marker(
+                [39.573808275, -107.5259472875],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_66dac1d1142ce1b234fb7a3fdfffc942 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9447513110eee08b9fb1985a81418645.setIcon(icon_66dac1d1142ce1b234fb7a3fdfffc942);
+        
+    
+        var popup_07e07f397ba4036a74853891db66fe8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34aa26300b5eef44ad3b007576fa1933 = $(`<div id="html_34aa26300b5eef44ad3b007576fa1933" style="width: 100.0%; height: 100.0%;">Colorado Solar Inc<br>Solar<br>http://www.cosolar.com/</div>`)[0];
+                popup_07e07f397ba4036a74853891db66fe8f.setContent(html_34aa26300b5eef44ad3b007576fa1933);
+            
+        
+
+        marker_9447513110eee08b9fb1985a81418645.bindPopup(popup_07e07f397ba4036a74853891db66fe8f)
+        ;
+
+        
+    
+    
+            var marker_c12f110664a015cd3e6bef27018dc4dd = L.marker(
+                [39.766570297106895, -105.02022609247794],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_511b6c8e41d16372e6ea317f0c2fff10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c12f110664a015cd3e6bef27018dc4dd.setIcon(icon_511b6c8e41d16372e6ea317f0c2fff10);
+        
+    
+        var popup_22a1048e9cd94216aaa2e286b916f82e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c13712fab1ee495ff2f87e543927086 = $(`<div id="html_7c13712fab1ee495ff2f87e543927086" style="width: 100.0%; height: 100.0%;">Conergy, Inc.<br>Solar<br>http://www.conergy.us/desktopdefault.aspx</div>`)[0];
+                popup_22a1048e9cd94216aaa2e286b916f82e.setContent(html_7c13712fab1ee495ff2f87e543927086);
+            
+        
+
+        marker_c12f110664a015cd3e6bef27018dc4dd.bindPopup(popup_22a1048e9cd94216aaa2e286b916f82e)
+        ;
+
+        
+    
+    
+            var marker_461a2d86750f452a7d415ec971086f53 = L.marker(
+                [37.48789065, 126.87042194246109],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_5eba5c223ce8f87f8a41c48d37289c8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_461a2d86750f452a7d415ec971086f53.setIcon(icon_5eba5c223ce8f87f8a41c48d37289c8c);
+        
+    
+        var popup_98eb35cc3cb45c4bfd4749b913c6dc9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce9a5550b910851f624cf3a59303382c = $(`<div id="html_ce9a5550b910851f624cf3a59303382c" style="width: 100.0%; height: 100.0%;">Conserval Systems Inc.<br>Solar<br>http://www.solarwall.com</div>`)[0];
+                popup_98eb35cc3cb45c4bfd4749b913c6dc9a.setContent(html_ce9a5550b910851f624cf3a59303382c);
+            
+        
+
+        marker_461a2d86750f452a7d415ec971086f53.bindPopup(popup_98eb35cc3cb45c4bfd4749b913c6dc9a)
+        ;
+
+        
+    
+    
+            var marker_53edd5bbb88689f20ef9bbb74d27c0e9 = L.marker(
+                [48.8546062, 13.142688093946797],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_f5c5a032b42e5274e63d69fd6e15bd2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_53edd5bbb88689f20ef9bbb74d27c0e9.setIcon(icon_f5c5a032b42e5274e63d69fd6e15bd2a);
+        
+    
+        var popup_62d8c4bee9ce6786dea007d16c9a46e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f2e4e9809de0f7820109a2a7bcd711f = $(`<div id="html_3f2e4e9809de0f7820109a2a7bcd711f" style="width: 100.0%; height: 100.0%;">Cool Earth Solar<br>Solar<br>http://www.coolearthsolar.com/</div>`)[0];
+                popup_62d8c4bee9ce6786dea007d16c9a46e9.setContent(html_3f2e4e9809de0f7820109a2a7bcd711f);
+            
+        
+
+        marker_53edd5bbb88689f20ef9bbb74d27c0e9.bindPopup(popup_62d8c4bee9ce6786dea007d16c9a46e9)
+        ;
+
+        
+    
+    
+            var marker_00a34b163d1a4c9b8cc1a99f8e5faffa = L.marker(
+                [24.8113405, -107.4407434],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_f283157025f6c27b8f209e6f2c8c270f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_00a34b163d1a4c9b8cc1a99f8e5faffa.setIcon(icon_f283157025f6c27b8f209e6f2c8c270f);
+        
+    
+        var popup_45afc9980070db92bd05a4d4bd47983c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc828affceef359eb8d4acebee57dc1f = $(`<div id="html_cc828affceef359eb8d4acebee57dc1f" style="width: 100.0%; height: 100.0%;">Cool Energy, Inc.<br>Solar<br>http://www.coolenergyinc.com</div>`)[0];
+                popup_45afc9980070db92bd05a4d4bd47983c.setContent(html_cc828affceef359eb8d4acebee57dc1f);
+            
+        
+
+        marker_00a34b163d1a4c9b8cc1a99f8e5faffa.bindPopup(popup_45afc9980070db92bd05a4d4bd47983c)
+        ;
+
+        
+    
+    
+            var marker_482bbd32836fbc15529a0cccd5c57f32 = L.marker(
+                [42.515449045333334, -70.895557447],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_9d0edcd009e91c2cb133e1aed803df3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_482bbd32836fbc15529a0cccd5c57f32.setIcon(icon_9d0edcd009e91c2cb133e1aed803df3c);
+        
+    
+        var popup_b6c413ded22e7b6ff0a282e21b602c11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b62daa1846ec025329c4905afc7176cf = $(`<div id="html_b62daa1846ec025329c4905afc7176cf" style="width: 100.0%; height: 100.0%;">Crystal Systems<br>Solar<br>http://www.crystalsystems.com/</div>`)[0];
+                popup_b6c413ded22e7b6ff0a282e21b602c11.setContent(html_b62daa1846ec025329c4905afc7176cf);
+            
+        
+
+        marker_482bbd32836fbc15529a0cccd5c57f32.bindPopup(popup_b6c413ded22e7b6ff0a282e21b602c11)
+        ;
+
+        
+    
+    
+            var marker_fe475f2a22f70d69779ae9584cfe28e7 = L.marker(
+                [49.3506304, 24.6245863],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_b059c653b7d571c96ed2cb309e6a4543 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe475f2a22f70d69779ae9584cfe28e7.setIcon(icon_b059c653b7d571c96ed2cb309e6a4543);
+        
+    
+        var popup_08c3bb1afcd761ee190c80db848a00f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06a603cbea4fab4358a25995b18422ac = $(`<div id="html_06a603cbea4fab4358a25995b18422ac" style="width: 100.0%; height: 100.0%;">Direct Energy Inc.<br>Renewable Energy,Services,Solar,Wind energy<br>http://www.directenergy.com/</div>`)[0];
+                popup_08c3bb1afcd761ee190c80db848a00f2.setContent(html_06a603cbea4fab4358a25995b18422ac);
+            
+        
+
+        marker_fe475f2a22f70d69779ae9584cfe28e7.bindPopup(popup_08c3bb1afcd761ee190c80db848a00f2)
+        ;
+
+        
+    
+    
+            var marker_3f904f26064a84aeaad03cbbb068e217 = L.marker(
+                [29.828215869601326, -95.47111002093023],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_dd9dbd021cff797b672d826d59f5bcff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3f904f26064a84aeaad03cbbb068e217.setIcon(icon_dd9dbd021cff797b672d826d59f5bcff);
+        
+    
+        var popup_008412b1d7ff69d1ae32298c05589260 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acf187f65aad094804f6959d8edd1386 = $(`<div id="html_acf187f65aad094804f6959d8edd1386" style="width: 100.0%; height: 100.0%;">Ecowatt Design LLC<br>Solar<br>http://www.ecowattdesign.com/</div>`)[0];
+                popup_008412b1d7ff69d1ae32298c05589260.setContent(html_acf187f65aad094804f6959d8edd1386);
+            
+        
+
+        marker_3f904f26064a84aeaad03cbbb068e217.bindPopup(popup_008412b1d7ff69d1ae32298c05589260)
+        ;
+
+        
+    
+    
+            var marker_3bbb4970c4bec93b0ec1b7c8e571b733 = L.marker(
+                [39.77061385414847, -105.23216384534206],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_efc26c283dde4ef243fd844bbcf4ac76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3bbb4970c4bec93b0ec1b7c8e571b733.setIcon(icon_efc26c283dde4ef243fd844bbcf4ac76);
+        
+    
+        var popup_f7f153f34499066bde51696854685d90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26bb714a27964adf9cb9e964396a629a = $(`<div id="html_26bb714a27964adf9cb9e964396a629a" style="width: 100.0%; height: 100.0%;">Energistic Systems<br>Solar<br>http://www.energisticsystems.us/</div>`)[0];
+                popup_f7f153f34499066bde51696854685d90.setContent(html_26bb714a27964adf9cb9e964396a629a);
+            
+        
+
+        marker_3bbb4970c4bec93b0ec1b7c8e571b733.bindPopup(popup_f7f153f34499066bde51696854685d90)
+        ;
+
+        
+    
+    
+            var marker_bab763e1326e84c9e5187bcd4c8f1b04 = L.marker(
+                [39.74345101071429, -105.2074898359127],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_3fa5c5238d7059f01f3c80b9121b9a03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bab763e1326e84c9e5187bcd4c8f1b04.setIcon(icon_3fa5c5238d7059f01f3c80b9121b9a03);
+        
+    
+        var popup_31593f3086339fd88501f7dd616b51e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58873893b9350404dff446e43a75465f = $(`<div id="html_58873893b9350404dff446e43a75465f" style="width: 100.0%; height: 100.0%;">nan</div>`)[0];
+                popup_31593f3086339fd88501f7dd616b51e9.setContent(html_58873893b9350404dff446e43a75465f);
+            
+        
+
+        marker_bab763e1326e84c9e5187bcd4c8f1b04.bindPopup(popup_31593f3086339fd88501f7dd616b51e9)
+        ;
+
+        
+    
+    
+            var marker_1c20c836960f1c76e7145691df595fca = L.marker(
+                [30.270311240948473, -97.74300525376196],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_7634b88d39888af87e158b99f22345ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1c20c836960f1c76e7145691df595fca.setIcon(icon_7634b88d39888af87e158b99f22345ac);
+        
+    
+        var popup_8176981731a2ef1288739914bcc60d4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be06b6a7355a74dc587a3cdae0572b9e = $(`<div id="html_be06b6a7355a74dc587a3cdae0572b9e" style="width: 100.0%; height: 100.0%;">Entero Energy<br>Solar<br>http://www.enteroenergy.com/</div>`)[0];
+                popup_8176981731a2ef1288739914bcc60d4f.setContent(html_be06b6a7355a74dc587a3cdae0572b9e);
+            
+        
+
+        marker_1c20c836960f1c76e7145691df595fca.bindPopup(popup_8176981731a2ef1288739914bcc60d4f)
+        ;
+
+        
+    
+    
+            var marker_32ee77658ee4a933d09fba95b4373d93 = L.marker(
+                [42.74673408227848, -71.17097110126582],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_768dc9fd8e8c1d15c878a0cbf67dc0ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_32ee77658ee4a933d09fba95b4373d93.setIcon(icon_768dc9fd8e8c1d15c878a0cbf67dc0ae);
+        
+    
+        var popup_cba894bea62ac71de048ecd5da1063c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d2ff00019f32e01b1e27ef358b4e06d = $(`<div id="html_1d2ff00019f32e01b1e27ef358b4e06d" style="width: 100.0%; height: 100.0%;">Environmental Solar Systems<br>Solar<br>http://www.environmentalsolarsystems.com/</div>`)[0];
+                popup_cba894bea62ac71de048ecd5da1063c8.setContent(html_1d2ff00019f32e01b1e27ef358b4e06d);
+            
+        
+
+        marker_32ee77658ee4a933d09fba95b4373d93.bindPopup(popup_cba894bea62ac71de048ecd5da1063c8)
+        ;
+
+        
+    
+    
+            var marker_b282e481ce01fdbfcb0ac8c169b1f1cc = L.marker(
+                [32.8354692090586, -117.26026044128315],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_26abf436453fd63f9183981fc4699f9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b282e481ce01fdbfcb0ac8c169b1f1cc.setIcon(icon_26abf436453fd63f9183981fc4699f9a);
+        
+    
+        var popup_4bb741e0844b18b7e70d89fe11119627 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7685427cd9e55c3efb239852630d18fb = $(`<div id="html_7685427cd9e55c3efb239852630d18fb" style="width: 100.0%; height: 100.0%;">Envision Solar<br>Solar<br>http://www.envisionsolar.com/</div>`)[0];
+                popup_4bb741e0844b18b7e70d89fe11119627.setContent(html_7685427cd9e55c3efb239852630d18fb);
+            
+        
+
+        marker_b282e481ce01fdbfcb0ac8c169b1f1cc.bindPopup(popup_4bb741e0844b18b7e70d89fe11119627)
+        ;
+
+        
+    
+    
+            var marker_eeedec0c75fd29ad471451c05ddd2ebc = L.marker(
+                [40.156727065, -75.27659803645834],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_4d1d61d5336516dc33e76d810c9a5787 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eeedec0c75fd29ad471451c05ddd2ebc.setIcon(icon_4d1d61d5336516dc33e76d810c9a5787);
+        
+    
+        var popup_b7760dd73a52b58e62f12b0d5e35f7b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efed39855851a5347e9a8fbc45488e39 = $(`<div id="html_efed39855851a5347e9a8fbc45488e39" style="width: 100.0%; height: 100.0%;">nan</div>`)[0];
+                popup_b7760dd73a52b58e62f12b0d5e35f7b4.setContent(html_efed39855851a5347e9a8fbc45488e39);
+            
+        
+
+        marker_eeedec0c75fd29ad471451c05ddd2ebc.bindPopup(popup_b7760dd73a52b58e62f12b0d5e35f7b4)
+        ;
+
+        
+    
+    
+            var marker_6a2e4c537e3edfcebf3a669e7759994f = L.marker(
+                [40.74551643143939, -73.97969713855218],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_b352e7b199d7b2bd7735c072c79aa8ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6a2e4c537e3edfcebf3a669e7759994f.setIcon(icon_b352e7b199d7b2bd7735c072c79aa8ef);
+        
+    
+        var popup_7a0a6afdfdc1d2c9f10aadabc436eef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a6e78fae7ff6c5e201173d7c16fcb65 = $(`<div id="html_1a6e78fae7ff6c5e201173d7c16fcb65" style="width: 100.0%; height: 100.0%;">FTL Solar LLC<br>Solar<br>http://www.ftlsolar.com/</div>`)[0];
+                popup_7a0a6afdfdc1d2c9f10aadabc436eef1.setContent(html_1a6e78fae7ff6c5e201173d7c16fcb65);
+            
+        
+
+        marker_6a2e4c537e3edfcebf3a669e7759994f.bindPopup(popup_7a0a6afdfdc1d2c9f10aadabc436eef1)
+        ;
+
+        
+    
+    
+            var marker_9be40da09c1a612002fecff902b7863e = L.marker(
+                [42.851758093366335, -71.50693462128713],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_d2f972bd4288f25596f72dc2f9018095 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9be40da09c1a612002fecff902b7863e.setIcon(icon_d2f972bd4288f25596f72dc2f9018095);
+        
+    
+        var popup_543de33b096822c2e6a142ff080a3a63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4887375fd41d0c74e991e1b916108232 = $(`<div id="html_4887375fd41d0c74e991e1b916108232" style="width: 100.0%; height: 100.0%;">GT Solar, Inc.<br>Solar<br>http://www.gtsolar.com/</div>`)[0];
+                popup_543de33b096822c2e6a142ff080a3a63.setContent(html_4887375fd41d0c74e991e1b916108232);
+            
+        
+
+        marker_9be40da09c1a612002fecff902b7863e.bindPopup(popup_543de33b096822c2e6a142ff080a3a63)
+        ;
+
+        
+    
+    
+            var marker_3e81c0cc12373d04347d9531ed05c834 = L.marker(
+                [39.722068, -106.317759],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_f0b21c631341a206af499b5036eace7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e81c0cc12373d04347d9531ed05c834.setIcon(icon_f0b21c631341a206af499b5036eace7f);
+        
+    
+        var popup_bebab1b411d68fd66087632584e6f473 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01dc4f91d2b3667e9d5f8d678ab191b0 = $(`<div id="html_01dc4f91d2b3667e9d5f8d678ab191b0" style="width: 100.0%; height: 100.0%;">Gaiam Real Goods<br>Solar<br>http://www.gaiam.com/realgoods/</div>`)[0];
+                popup_bebab1b411d68fd66087632584e6f473.setContent(html_01dc4f91d2b3667e9d5f8d678ab191b0);
+            
+        
+
+        marker_3e81c0cc12373d04347d9531ed05c834.bindPopup(popup_bebab1b411d68fd66087632584e6f473)
+        ;
+
+        
+    
+    
+            var marker_b057e9f4583f1735cda23c64b7f2c761 = L.marker(
+                [40.514456231686545, -74.53737403753549],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_91ebea6fda3434069e41e9fc9ac9acdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b057e9f4583f1735cda23c64b7f2c761.setIcon(icon_91ebea6fda3434069e41e9fc9ac9acdc);
+        
+    
+        var popup_c6e394c2f483f91d91a1aecb25acca07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7518672247102f4993a042957e3dcd5a = $(`<div id="html_7518672247102f4993a042957e3dcd5a" style="width: 100.0%; height: 100.0%;">GeoPeak Energy<br>Solar<br>http://www.geopeakenergy.com</div>`)[0];
+                popup_c6e394c2f483f91d91a1aecb25acca07.setContent(html_7518672247102f4993a042957e3dcd5a);
+            
+        
+
+        marker_b057e9f4583f1735cda23c64b7f2c761.bindPopup(popup_c6e394c2f483f91d91a1aecb25acca07)
+        ;
+
+        
+    
+    
+            var marker_bed77cba9c3b5268f82f30081918c844 = L.marker(
+                [48.0825634, 12.391410105501969],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_b86201d855903ea8693a81937dd381f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bed77cba9c3b5268f82f30081918c844.setIcon(icon_b86201d855903ea8693a81937dd381f9);
+        
+    
+        var popup_2e516009983b544c3db5b2ea8f08b06b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c0e084ba6bfe07d6bb297a8cf702048 = $(`<div id="html_1c0e084ba6bfe07d6bb297a8cf702048" style="width: 100.0%; height: 100.0%;">Hackney Construction<br>Solar<br>http://DigitalProductsAndRenewableEnergy.com/</div>`)[0];
+                popup_2e516009983b544c3db5b2ea8f08b06b.setContent(html_1c0e084ba6bfe07d6bb297a8cf702048);
+            
+        
+
+        marker_bed77cba9c3b5268f82f30081918c844.bindPopup(popup_2e516009983b544c3db5b2ea8f08b06b)
+        ;
+
+        
+    
+    
+            var marker_b0ec532b1a5525014d41db51c2e7e873 = L.marker(
+                [37.8713702960199, -122.29376355920398],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_6def65fabe50191a5dc01711bbf2cc29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b0ec532b1a5525014d41db51c2e7e873.setIcon(icon_6def65fabe50191a5dc01711bbf2cc29);
+        
+    
+        var popup_b3a4bbc731751b262a88d848d067b440 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9919313d8ff9027afcc05879c2b6c6bd = $(`<div id="html_9919313d8ff9027afcc05879c2b6c6bd" style="width: 100.0%; height: 100.0%;">Helio Micro Utility Inc<br>Solar<br>http://www.heliomu.com/</div>`)[0];
+                popup_b3a4bbc731751b262a88d848d067b440.setContent(html_9919313d8ff9027afcc05879c2b6c6bd);
+            
+        
+
+        marker_b0ec532b1a5525014d41db51c2e7e873.bindPopup(popup_b3a4bbc731751b262a88d848d067b440)
+        ;
+
+        
+    
+    
+            var marker_3ecd079bdfbb95a97e01d43aa2e5787f = L.marker(
+                [30.188705328341992, -97.73024473693906],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_53d9202cc4d31b29f09794d7dfb547f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3ecd079bdfbb95a97e01d43aa2e5787f.setIcon(icon_53d9202cc4d31b29f09794d7dfb547f9);
+        
+    
+        var popup_6a08643fe5db9be7860429e5813c2086 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c20c8520889efbf69195f8a9cdf2e706 = $(`<div id="html_c20c8520889efbf69195f8a9cdf2e706" style="width: 100.0%; height: 100.0%;">HelioVolt Inc<br>Solar<br>http://www.heliovolt.net/</div>`)[0];
+                popup_6a08643fe5db9be7860429e5813c2086.setContent(html_c20c8520889efbf69195f8a9cdf2e706);
+            
+        
+
+        marker_3ecd079bdfbb95a97e01d43aa2e5787f.bindPopup(popup_6a08643fe5db9be7860429e5813c2086)
+        ;
+
+        
+    
+    
+            var marker_647c96e9534af7ff544931c3a1d9786f = L.marker(
+                [42.21692700151515, -70.9022347439394],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_e432957932779f74fd93794a9cb976b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_647c96e9534af7ff544931c3a1d9786f.setIcon(icon_e432957932779f74fd93794a9cb976b4);
+        
+    
+        var popup_f2660108c306ff3acb96552386ea5717 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c222dee09e30a2b373b12202ae2af28 = $(`<div id="html_4c222dee09e30a2b373b12202ae2af28" style="width: 100.0%; height: 100.0%;">Heliotronics Inc<br>Solar<br>http://www.heliotronics.com/</div>`)[0];
+                popup_f2660108c306ff3acb96552386ea5717.setContent(html_4c222dee09e30a2b373b12202ae2af28);
+            
+        
+
+        marker_647c96e9534af7ff544931c3a1d9786f.bindPopup(popup_f2660108c306ff3acb96552386ea5717)
+        ;
+
+        
+    
+    
+            var marker_fe61d52a2610063b63b7a31b451fd5d0 = L.marker(
+                [32.80063516515932, -117.17300086235451],
+                {}
+            ).addTo(map_b38eefee0057031d2891b6971716e9e9);
+        
+    
+            var icon_7c4f9930678550ccd1ccdd1d2726c7a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fe61d52a2610063b63b7a31b451fd5d0.setIcon(icon_7c4f9930678550ccd1ccdd1d2726c7a9);
+        
+    
+        var popup_ad7b22fca49aa7e0a3115313ab8bec59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2643ac3148fbf8d1d89a284bd869338 = $(`<div id="html_b2643ac3148fbf8d1d89a284bd869338" style="width: 100.0%; height: 100.0%;">Home Energy Systems Inc<br>Solar<br>http://www.homeenergysystemsinc.com/</div>`)[0];
+                popup_ad7b22fca49aa7e0a3115313ab8bec59.setContent(html_b2643ac3148fbf8d1d89a284bd869338);
+            
+        
+
+        marker_fe61d52a2610063b63b7a31b451fd5d0.bindPopup(popup_ad7b22fca49aa7e0a3115313ab8bec59)
+        ;
+
+        
+    
+</script>
+</html>
